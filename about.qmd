@@ -2,4 +2,11 @@
 title: "About"
 ---
 
-About this site
+## Background
+I am graduated from University of Waterloo. I majored in Computational Mathematics and Statistics Co-op Program. Other than the normal study terms. I also completed 5 Co-op work terms during my undergrad study. I really appreciate the special experience which allows me really used what I learned in practical way.
+
+## Why data science
+Since what I studied in Stats and CM are highly related in data science. For example, I learned methods of machine learning such as tree model and classification in Statistical Learning courses. I have done some project related to data collecting, making statistical predicting model, data visualization and so on. I wish I could enhance my coding skill and doing more project which make me become a mature data scientist in MDS.
+
+## Outside of data science
+I would like to talk a little more of myself outside of data science. As you can see on my home page. There is an image I took when I am skiing on the Cypress Mountain. I am a big fan of skiing and snowboarding. I like when I got improved every time as I keep skiing more and more. I enjoy the great sense of achievement and excitement of successfully ski down from the green runs, blue runs and even the black runs. 

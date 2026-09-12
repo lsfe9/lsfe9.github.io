@@ -1,16 +1,37 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Jiaqi Feng",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "I am graduated from University of Waterloo. I majored in Computational Mathematics and Statistics Co-op Program. Other than the normal study terms. I also completed 5 Co-op work terms during my undergrad study. I really appreciate the special experience which allows me really used what I learned in practical way."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "",
+    "text": "I am graduated from University of Waterloo. I majored in Computational Mathematics and Statistics Co-op Program. Other than the normal study terms. I also completed 5 Co-op work terms during my undergrad study. I really appreciate the special experience which allows me really used what I learned in practical way."
+  },
+  {
+    "objectID": "about.html#why-data-science",
+    "href": "about.html#why-data-science",
+    "title": "About",
+    "section": "Why data science",
+    "text": "Why data science\nSince what I studied in Stats and CM are highly related in data science. For example, I learned methods of machine learning such as tree model and classification in Statistical Learning courses. I have done some project related to data collecting, making statistical predicting model, data visualization and so on. I wish I could enhance my coding skill and doing more project which make me become a mature data scientist in MDS."
+  },
+  {
+    "objectID": "about.html#outside-of-data-science",
+    "href": "about.html#outside-of-data-science",
+    "title": "About",
+    "section": "Outside of data science",
+    "text": "Outside of data science\nI would like to talk a little more of myself outside of data science. As you can see on my home page. There is an image I took when I am skiing on the Cypress Mountain. I am a big fan of skiing and snowboarding. I like when I got improved every time as I keep skiing more and more. I enjoy the great sense of achievement and excitement of successfully ski down from the green runs, blue runs and even the black runs."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jiaqi Feng",
+    "section": "",
+    "text": "Hi everyone! I am Jiaqi Feng. I graduated from University of Waterloo. I majored in Statistics and Computational Mathematics before joining MDS. I hope I can enhance my coding skills and become a more mature data scientist after I study in MDS program."
   }
 ]

@@ -2,6 +2,6 @@
 title: "Jiaqi Feng"
 ---
 
-This is a Quarto website.
+![](images/ski.jpg){width=250px}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Hi everyone! I am Jiaqi Feng. I graduated from University of Waterloo. I majored in Statistics and Computational Mathematics before joining MDS. I hope I can enhance my coding skills and become a more mature data scientist after I study in MDS program. 
