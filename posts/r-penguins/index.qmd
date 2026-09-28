@@ -5,7 +5,7 @@ date: 2026-09-28
 ---
 
 
-## useful package and dataset
+## Useful package and dataset
 ```{r}
 #| message: false
 #| warning: false
@@ -16,15 +16,15 @@ library(palmerpenguins)
 head(penguins)
 ```
 
-## dataset intro
+## Dataset intro
 The data called penguins came from the package [Palmer Penguins] (https://allisonhorst.github.io/palmerpenguins/).
 
-## count the number of penguins for each species
+## Count the number of penguins for each species
 ```{r}
 table(penguins$species)
 ```
 
-# find the specie with min body_mass_g
+# Find the specie with min body_mass_g
 ```{r}
 min_body_penguin <- penguins |>
     arrange(body_mass_g) |>
@@ -33,7 +33,7 @@ min_body_penguin <- penguins |>
 min_body_penguin
 ```
 
-## the plot of species v.s. body mass
+## The plot of species v.s. body mass
 ```{r}
 #| label: fig-penguin-mass
 #| fig-cap: "body mass of penguins by species"

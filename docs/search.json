@@ -17,22 +17,22 @@
     "objectID": "posts/r-penguins/index.html#dataset-intro",
     "href": "posts/r-penguins/index.html#dataset-intro",
     "title": "Penguins data analysis in R",
-    "section": "dataset intro",
-    "text": "dataset intro\nThe data called penguins came from the package [Palmer Penguins] (https://allisonhorst.github.io/palmerpenguins/)."
+    "section": "Dataset intro",
+    "text": "Dataset intro\nThe data called penguins came from the package [Palmer Penguins] (https://allisonhorst.github.io/palmerpenguins/)."
   },
   {
     "objectID": "posts/r-penguins/index.html#count-the-number-of-penguins-for-each-species",
     "href": "posts/r-penguins/index.html#count-the-number-of-penguins-for-each-species",
     "title": "Penguins data analysis in R",
-    "section": "count the number of penguins for each species",
-    "text": "count the number of penguins for each species\n\ntable(penguins$species)\n\n\n   Adelie Chinstrap    Gentoo \n      152        68       124"
+    "section": "Count the number of penguins for each species",
+    "text": "Count the number of penguins for each species\n\ntable(penguins$species)\n\n\n   Adelie Chinstrap    Gentoo \n      152        68       124"
   },
   {
     "objectID": "posts/r-penguins/index.html#the-plot-of-species-v.s.-body-mass",
     "href": "posts/r-penguins/index.html#the-plot-of-species-v.s.-body-mass",
     "title": "Penguins data analysis in R",
-    "section": "the plot of species v.s. body mass",
-    "text": "the plot of species v.s. body mass\n\nplot &lt;- penguins |&gt;\n    ggplot(aes(x = species, y = body_mass_g)) +\n    labs( x = \"Species\", y = \"Body mass (g)\" )+\n    geom_jitter(width = 0.2, height = 0, size = 1)\nplot\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`).\n\n\n\n\n\n\n\n\nFigure 1: body mass of penguins by species"
+    "section": "The plot of species v.s. body mass",
+    "text": "The plot of species v.s. body mass\n\nplot &lt;- penguins |&gt;\n    ggplot(aes(x = species, y = body_mass_g)) +\n    labs( x = \"Species\", y = \"Body mass (g)\" )+\n    geom_jitter(width = 0.2, height = 0, size = 1)\nplot\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`).\n\n\n\n\n\n\n\n\nFigure 1: body mass of penguins by species"
   },
   {
     "objectID": "posts/r-penguins/index.html#summary-and-found",

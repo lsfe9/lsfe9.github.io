@@ -160,12 +160,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#useful-package-and-dataset" id="toc-useful-package-and-dataset" class="nav-link active" data-scroll-target="#useful-package-and-dataset">useful package and dataset</a></li>
-  <li><a href="#dataset-intro" id="toc-dataset-intro" class="nav-link" data-scroll-target="#dataset-intro">dataset intro</a></li>
-  <li><a href="#count-the-number-of-penguins-for-each-species" id="toc-count-the-number-of-penguins-for-each-species" class="nav-link" data-scroll-target="#count-the-number-of-penguins-for-each-species">count the number of penguins for each species</a></li>
-  <li><a href="#find-the-specie-with-min-body_mass_g" id="toc-find-the-specie-with-min-body_mass_g" class="nav-link" data-scroll-target="#find-the-specie-with-min-body_mass_g">find the specie with min body_mass_g</a>
+  <li><a href="#useful-package-and-dataset" id="toc-useful-package-and-dataset" class="nav-link active" data-scroll-target="#useful-package-and-dataset">Useful package and dataset</a></li>
+  <li><a href="#dataset-intro" id="toc-dataset-intro" class="nav-link" data-scroll-target="#dataset-intro">Dataset intro</a></li>
+  <li><a href="#count-the-number-of-penguins-for-each-species" id="toc-count-the-number-of-penguins-for-each-species" class="nav-link" data-scroll-target="#count-the-number-of-penguins-for-each-species">Count the number of penguins for each species</a></li>
+  <li><a href="#find-the-specie-with-min-body_mass_g" id="toc-find-the-specie-with-min-body_mass_g" class="nav-link" data-scroll-target="#find-the-specie-with-min-body_mass_g">Find the specie with min body_mass_g</a>
   <ul class="collapse">
-  <li><a href="#the-plot-of-species-v.s.-body-mass" id="toc-the-plot-of-species-v.s.-body-mass" class="nav-link" data-scroll-target="#the-plot-of-species-v.s.-body-mass">the plot of species v.s. body mass</a></li>
+  <li><a href="#the-plot-of-species-v.s.-body-mass" id="toc-the-plot-of-species-v.s.-body-mass" class="nav-link" data-scroll-target="#the-plot-of-species-v.s.-body-mass">The plot of species v.s. body mass</a></li>
   <li><a href="#summary-and-found" id="toc-summary-and-found" class="nav-link" data-scroll-target="#summary-and-found">Summary and Found</a></li>
   </ul></li>
   </ul>
@@ -206,7 +206,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <section id="useful-package-and-dataset" class="level2">
-<h2 class="anchored" data-anchor-id="useful-package-and-dataset">useful package and dataset</h2>
+<h2 class="anchored" data-anchor-id="useful-package-and-dataset">Useful package and dataset</h2>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
@@ -227,11 +227,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 <section id="dataset-intro" class="level2">
-<h2 class="anchored" data-anchor-id="dataset-intro">dataset intro</h2>
+<h2 class="anchored" data-anchor-id="dataset-intro">Dataset intro</h2>
 <p>The data called penguins came from the package [Palmer Penguins] (https://allisonhorst.github.io/palmerpenguins/).</p>
 </section>
 <section id="count-the-number-of-penguins-for-each-species" class="level2">
-<h2 class="anchored" data-anchor-id="count-the-number-of-penguins-for-each-species">count the number of penguins for each species</h2>
+<h2 class="anchored" data-anchor-id="count-the-number-of-penguins-for-each-species">Count the number of penguins for each species</h2>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(penguins<span class="sc">$</span>species)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -242,7 +242,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 <section id="find-the-specie-with-min-body_mass_g" class="level1">
-<h1>find the specie with min body_mass_g</h1>
+<h1>Find the specie with min body_mass_g</h1>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>min_body_penguin <span class="ot">&lt;-</span> penguins <span class="sc">|&gt;</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(body_mass_g) <span class="sc">|&gt;</span></span>
@@ -256,7 +256,7 @@ Levels: Adelie Chinstrap Gentoo</code></pre>
 </div>
 </div>
 <section id="the-plot-of-species-v.s.-body-mass" class="level2">
-<h2 class="anchored" data-anchor-id="the-plot-of-species-v.s.-body-mass">the plot of species v.s. body mass</h2>
+<h2 class="anchored" data-anchor-id="the-plot-of-species-v.s.-body-mass">The plot of species v.s. body mass</h2>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>plot <span class="ot">&lt;-</span> penguins <span class="sc">|&gt;</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> species, <span class="at">y =</span> body_mass_g)) <span class="sc">+</span></span>
