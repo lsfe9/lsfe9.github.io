@@ -1,5 +1,47 @@
 [
   {
+    "objectID": "posts/r-penguins/index.html",
+    "href": "posts/r-penguins/index.html",
+    "title": "Penguins data analysis in R",
+    "section": "",
+    "text": "library(ggplot2)\nlibrary(dplyr)\nlibrary(palmerpenguins)\nhead(penguins)\n\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Adelie  Torgersen           39.1          18.7               181        3750\n2 Adelie  Torgersen           39.5          17.4               186        3800\n3 Adelie  Torgersen           40.3          18                 195        3250\n4 Adelie  Torgersen           NA            NA                  NA          NA\n5 Adelie  Torgersen           36.7          19.3               193        3450\n6 Adelie  Torgersen           39.3          20.6               190        3650\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
+  },
+  {
+    "objectID": "posts/r-penguins/index.html#useful-package-and-dataset",
+    "href": "posts/r-penguins/index.html#useful-package-and-dataset",
+    "title": "Penguins data analysis in R",
+    "section": "",
+    "text": "library(ggplot2)\nlibrary(dplyr)\nlibrary(palmerpenguins)\nhead(penguins)\n\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Adelie  Torgersen           39.1          18.7               181        3750\n2 Adelie  Torgersen           39.5          17.4               186        3800\n3 Adelie  Torgersen           40.3          18                 195        3250\n4 Adelie  Torgersen           NA            NA                  NA          NA\n5 Adelie  Torgersen           36.7          19.3               193        3450\n6 Adelie  Torgersen           39.3          20.6               190        3650\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
+  },
+  {
+    "objectID": "posts/r-penguins/index.html#dataset-intro",
+    "href": "posts/r-penguins/index.html#dataset-intro",
+    "title": "Penguins data analysis in R",
+    "section": "dataset intro",
+    "text": "dataset intro\nThe data called penguins came from the package [Palmer Penguins] (https://allisonhorst.github.io/palmerpenguins/)."
+  },
+  {
+    "objectID": "posts/r-penguins/index.html#count-the-number-of-penguins-for-each-species",
+    "href": "posts/r-penguins/index.html#count-the-number-of-penguins-for-each-species",
+    "title": "Penguins data analysis in R",
+    "section": "count the number of penguins for each species",
+    "text": "count the number of penguins for each species\n\ntable(penguins$species)\n\n\n   Adelie Chinstrap    Gentoo \n      152        68       124"
+  },
+  {
+    "objectID": "posts/r-penguins/index.html#the-plot-of-species-v.s.-body-mass",
+    "href": "posts/r-penguins/index.html#the-plot-of-species-v.s.-body-mass",
+    "title": "Penguins data analysis in R",
+    "section": "the plot of species v.s. body mass",
+    "text": "the plot of species v.s. body mass\n\nplot &lt;- penguins |&gt;\n    ggplot(aes(x = species, y = body_mass_g)) +\n    labs( x = \"Species\", y = \"Body mass (g)\" )+\n    geom_jitter(width = 0.2, height = 0, size = 1)\nplot\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`).\n\n\n\n\n\n\n\n\nFigure 1: body mass of penguins by species"
+  },
+  {
+    "objectID": "posts/r-penguins/index.html#summary-and-found",
+    "href": "posts/r-penguins/index.html#summary-and-found",
+    "title": "Penguins data analysis in R",
+    "section": "Summary and Found",
+    "text": "Summary and Found\nI read the dataset of penguins, and then I found that there were three species of penguins in this dataset. There are 152 Adelie, 124 Gentoo and 68 Chinstrap obervations in these data set. Among them, the penguin species with the smallest body_mass_g (2700.0g) is Chinstrap. Finally, I drew scatter plots for showing the body mass of each species of penguin."
+  },
+  {
     "objectID": "posts/first-weeks/index.html",
     "href": "posts/first-weeks/index.html",
     "title": "My first weeks in MDS",
@@ -11,7 +53,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nJiaqi Feng\n\n\n\n\n\nNo matching items"
+    "text": "Penguins data analysis in Python\n\n\n\n\n\n\n\n\nSep 28, 2026\n\n\nJiaqi Feng\n\n\n\n\n\n\n\n\n\n\n\n\nPenguins data analysis in R\n\n\n\n\n\n\n\n\nSep 28, 2026\n\n\nJiaqi Feng\n\n\n\n\n\n\n\n\n\n\n\n\nMy first weeks in MDS\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nJiaqi Feng\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -47,5 +89,54 @@
     "title": "Jiaqi Feng",
     "section": "",
     "text": "Hi everyone! I am Jiaqi Feng. I graduated from University of Waterloo. I majored in Statistics and Computational Mathematics before joining MDS. I hope I can enhance my coding skills and become a more mature data scientist after I study in MDS program."
+  },
+  {
+    "objectID": "posts/python-penguins/index.html",
+    "href": "posts/python-penguins/index.html",
+    "title": "Penguins data analysis in Python",
+    "section": "",
+    "text": "from palmerpenguins import load_penguins\n\npenguins = load_penguins()\nprint(penguins.head())\n\n  species     island  bill_length_mm  bill_depth_mm  flipper_length_mm  \\\n0  Adelie  Torgersen            39.1           18.7              181.0   \n1  Adelie  Torgersen            39.5           17.4              186.0   \n2  Adelie  Torgersen            40.3           18.0              195.0   \n3  Adelie  Torgersen             NaN            NaN                NaN   \n4  Adelie  Torgersen            36.7           19.3              193.0   \n\n   body_mass_g     sex  year  \n0       3750.0    male  2007  \n1       3800.0  female  2007  \n2       3250.0  female  2007  \n3          NaN     NaN  2007  \n4       3450.0  female  2007"
+  },
+  {
+    "objectID": "posts/python-penguins/index.html#dataset",
+    "href": "posts/python-penguins/index.html#dataset",
+    "title": "Penguins data analysis in Python",
+    "section": "",
+    "text": "from palmerpenguins import load_penguins\n\npenguins = load_penguins()\nprint(penguins.head())\n\n  species     island  bill_length_mm  bill_depth_mm  flipper_length_mm  \\\n0  Adelie  Torgersen            39.1           18.7              181.0   \n1  Adelie  Torgersen            39.5           17.4              186.0   \n2  Adelie  Torgersen            40.3           18.0              195.0   \n3  Adelie  Torgersen             NaN            NaN                NaN   \n4  Adelie  Torgersen            36.7           19.3              193.0   \n\n   body_mass_g     sex  year  \n0       3750.0    male  2007  \n1       3800.0  female  2007  \n2       3250.0  female  2007  \n3          NaN     NaN  2007  \n4       3450.0  female  2007"
+  },
+  {
+    "objectID": "posts/python-penguins/index.html#dataset-intro",
+    "href": "posts/python-penguins/index.html#dataset-intro",
+    "title": "Penguins data analysis in Python",
+    "section": "dataset intro",
+    "text": "dataset intro\nThe data called penguins came from the package [Palmer Penguins] (https://allisonhorst.github.io/palmerpenguins/)."
+  },
+  {
+    "objectID": "posts/python-penguins/index.html#count-the-number-of-penguins-for-each-species",
+    "href": "posts/python-penguins/index.html#count-the-number-of-penguins-for-each-species",
+    "title": "Penguins data analysis in Python",
+    "section": "count the number of penguins for each species",
+    "text": "count the number of penguins for each species\n\npenguins[\"species\"].value_counts()\n\nspecies\nAdelie       152\nGentoo       124\nChinstrap     68\nName: count, dtype: int64"
+  },
+  {
+    "objectID": "posts/python-penguins/index.html#find-the-specie-with-min-body_mass_g",
+    "href": "posts/python-penguins/index.html#find-the-specie-with-min-body_mass_g",
+    "title": "Penguins data analysis in Python",
+    "section": "find the specie with min body_mass_g",
+    "text": "find the specie with min body_mass_g\n\nprint(penguins.sort_values(\"body_mass_g\", ascending=True)[[\"species\", \"body_mass_g\"]].head(1))\n\n       species  body_mass_g\n314  Chinstrap       2700.0"
+  },
+  {
+    "objectID": "posts/python-penguins/index.html#the-plot-of-species-v.s.-body-mass",
+    "href": "posts/python-penguins/index.html#the-plot-of-species-v.s.-body-mass",
+    "title": "Penguins data analysis in Python",
+    "section": "the plot of species v.s. body mass",
+    "text": "the plot of species v.s. body mass\n\nimport altair as alt\n\nplot = (\n    alt.Chart(penguins.dropna(subset=[\"species\", \"body_mass_g\"]))\n    .mark_circle() \n    .encode(\n        x=alt.X(\"species:N\", title=\"species\"),\n        y=alt.Y(\"body_mass_g:Q\", title=\"body mass (g)\")\n    )\n    .properties(width=300, height=200))\n\nplot\n\n\n\n\n\n\n\n\n\nFigure 1: body mass of penguins by species"
+  },
+  {
+    "objectID": "posts/python-penguins/index.html#summary-and-found",
+    "href": "posts/python-penguins/index.html#summary-and-found",
+    "title": "Penguins data analysis in Python",
+    "section": "Summary and Found",
+    "text": "Summary and Found\nI read the dataset of penguins, and then I found that there were three species of penguins in this dataset. There are 152 Adelie, 124 Gentoo and 68 Chinstrap obervations in these data set. Among them, the penguin species with the smallest body_mass_g (2700.0g) is Chinstrap. Finally, I drew scatter plots for showing the body mass of each species of penguin."
   }
 ]
