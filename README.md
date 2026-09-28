@@ -12,15 +12,15 @@ The required Python packages are recorded in `uv.lock`, and the required R packa
 # Build the website
 You could run the following commands in your Git Bash terminal to built site.
 
-cd yourfolder
-git clone https://github.com/lsfe9/lsfe9.github.io.git
-cd lsfe9.github.io
-uv sync
-R 
-renv::restore()
-q()
-n
-uv run quarto render
+1. cd yourfolder  
+2. git clone https://github.com/lsfe9/lsfe9.github.io.git  
+3. cd lsfe9.github.io  
+4. uv sync  
+5. R   
+6. renv::restore()  
+7. q()  
+8. n  
+9. uv run quarto render  
 
 # Open the site locally
 The rendered website is in the `docs` folder. Open `docs/index.html` in a web browser, then you can see the website. These posts are under `docs/posts`.
