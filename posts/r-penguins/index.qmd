@@ -1,0 +1,9 @@
+---
+title: "Penguins data analysis in R"
+author: "Jiaqi Feng"
+date: 2026-09-28
+---
+
+```{r}
+library(ggplot2)
+```

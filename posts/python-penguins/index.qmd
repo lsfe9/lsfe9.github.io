@@ -4,3 +4,48 @@ author: "Jiaqi Feng"
 date: 2026-09-28
 ---
 
+
+## dataset
+```{python}
+#| message: false
+#| warning: false
+
+from palmerpenguins import load_penguins
+
+penguins = load_penguins()
+print(penguins.head())
+```
+
+## dataset intro
+The data called penguins came from the package [Palmer Penguins] (https://allisonhorst.github.io/palmerpenguins/).
+
+
+## count the number of penguins for each species
+```{python}
+penguins["species"].value_counts()
+```
+
+## find the specie with min body_mass_g
+
+```{python}
+print(penguins.sort_values("body_mass_g", ascending=True)[["species", "body_mass_g"]].head(1))
+```
+
+## the plot of species v.s. body mass
+```{python}
+#| label: fig-penguin-mass
+#| fig-cap: "body mass of penguins by species"
+
+import altair as alt
+
+plot = (
+    alt.Chart(penguins.dropna(subset=["species", "body_mass_g"]))
+    .mark_circle() 
+    .encode(
+        x=alt.X("species:N", title="species"),
+        y=alt.Y("body_mass_g:Q", title="body mass (g)")
+    )
+    .properties(width=300, height=200))
+
+plot
+```
