@@ -112,10 +112,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
 
-
-
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
-
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -166,11 +163,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#dataset" id="toc-dataset" class="nav-link active" data-scroll-target="#dataset">dataset</a></li>
-  <li><a href="#dataset-intro" id="toc-dataset-intro" class="nav-link" data-scroll-target="#dataset-intro">dataset intro</a></li>
-  <li><a href="#count-the-number-of-penguins-for-each-species" id="toc-count-the-number-of-penguins-for-each-species" class="nav-link" data-scroll-target="#count-the-number-of-penguins-for-each-species">count the number of penguins for each species</a></li>
-  <li><a href="#find-the-specie-with-min-body_mass_g" id="toc-find-the-specie-with-min-body_mass_g" class="nav-link" data-scroll-target="#find-the-specie-with-min-body_mass_g">find the specie with min body_mass_g</a></li>
-  <li><a href="#the-plot-of-species-v.s.-body-mass" id="toc-the-plot-of-species-v.s.-body-mass" class="nav-link" data-scroll-target="#the-plot-of-species-v.s.-body-mass">the plot of species v.s. body mass</a></li>
+  <li><a href="#dataset" id="toc-dataset" class="nav-link active" data-scroll-target="#dataset">Dataset</a></li>
+  <li><a href="#dataset-intro" id="toc-dataset-intro" class="nav-link" data-scroll-target="#dataset-intro">Dataset intro</a></li>
+  <li><a href="#count-the-number-of-penguins-for-each-species" id="toc-count-the-number-of-penguins-for-each-species" class="nav-link" data-scroll-target="#count-the-number-of-penguins-for-each-species">Count the number of penguins for each species</a></li>
+  <li><a href="#find-the-specie-with-min-body_mass_g" id="toc-find-the-specie-with-min-body_mass_g" class="nav-link" data-scroll-target="#find-the-specie-with-min-body_mass_g">Find the specie with min body_mass_g</a></li>
+  <li><a href="#the-plot-of-species-v.s.-body-mass" id="toc-the-plot-of-species-v.s.-body-mass" class="nav-link" data-scroll-target="#the-plot-of-species-v.s.-body-mass">The plot of species v.s. body mass</a></li>
   <li><a href="#summary-and-found" id="toc-summary-and-found" class="nav-link" data-scroll-target="#summary-and-found">Summary and Found</a></li>
   </ul>
 </nav>
@@ -210,8 +207,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <section id="dataset" class="level2">
-<h2 class="anchored" data-anchor-id="dataset">dataset</h2>
-<div id="cf7382ce" class="cell" data-message="false" data-execution_count="1">
+<h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
+<div id="6c90d93b" class="cell" data-message="false" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> palmerpenguins <span class="im">import</span> load_penguins</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>penguins <span class="op">=</span> load_penguins()</span>
@@ -234,12 +231,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 <section id="dataset-intro" class="level2">
-<h2 class="anchored" data-anchor-id="dataset-intro">dataset intro</h2>
+<h2 class="anchored" data-anchor-id="dataset-intro">Dataset intro</h2>
 <p>The data called penguins came from the package [Palmer Penguins] (https://allisonhorst.github.io/palmerpenguins/).</p>
 </section>
 <section id="count-the-number-of-penguins-for-each-species" class="level2">
-<h2 class="anchored" data-anchor-id="count-the-number-of-penguins-for-each-species">count the number of penguins for each species</h2>
-<div id="56747d0e" class="cell" data-execution_count="2">
+<h2 class="anchored" data-anchor-id="count-the-number-of-penguins-for-each-species">Count the number of penguins for each species</h2>
+<div id="2cc79be5" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>penguins[<span class="st">"species"</span>].value_counts()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
 <pre><code>species
@@ -251,8 +248,8 @@ Name: count, dtype: int64</code></pre>
 </div>
 </section>
 <section id="find-the-specie-with-min-body_mass_g" class="level2">
-<h2 class="anchored" data-anchor-id="find-the-specie-with-min-body_mass_g">find the specie with min body_mass_g</h2>
-<div id="f137cc72" class="cell" data-execution_count="3">
+<h2 class="anchored" data-anchor-id="find-the-specie-with-min-body_mass_g">Find the specie with min body_mass_g</h2>
+<div id="a6c1692d" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(penguins.sort_values(<span class="st">"body_mass_g"</span>, ascending<span class="op">=</span><span class="va">True</span>)[[<span class="st">"species"</span>, <span class="st">"body_mass_g"</span>]].head(<span class="dv">1</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>       species  body_mass_g
@@ -261,7 +258,7 @@ Name: count, dtype: int64</code></pre>
 </div>
 </section>
 <section id="the-plot-of-species-v.s.-body-mass" class="level2">
-<h2 class="anchored" data-anchor-id="the-plot-of-species-v.s.-body-mass">the plot of species v.s. body mass</h2>
+<h2 class="anchored" data-anchor-id="the-plot-of-species-v.s.-body-mass">The plot of species v.s. body mass</h2>
 <div id="cell-fig-penguin-mass" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -280,23 +277,23 @@ Name: count, dtype: int64</code></pre>
 <div aria-describedby="fig-penguin-mass-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 
 <style>
-  #altair-viz-d0268c82c007456ca4a26a2f24b7af7b.vega-embed {
+  #altair-viz-23823d1d60ec4ea08b21ab2ed53d5abb.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-d0268c82c007456ca4a26a2f24b7af7b.vega-embed details,
-  #altair-viz-d0268c82c007456ca4a26a2f24b7af7b.vega-embed details summary {
+  #altair-viz-23823d1d60ec4ea08b21ab2ed53d5abb.vega-embed details,
+  #altair-viz-23823d1d60ec4ea08b21ab2ed53d5abb.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-d0268c82c007456ca4a26a2f24b7af7b"></div>
+<div id="altair-viz-23823d1d60ec4ea08b21ab2ed53d5abb"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d0268c82c007456ca4a26a2f24b7af7b") {
-      outputDiv = document.getElementById("altair-viz-d0268c82c007456ca4a26a2f24b7af7b");
+    if (outputDiv.id !== "altair-viz-23823d1d60ec4ea08b21ab2ed53d5abb") {
+      outputDiv = document.getElementById("altair-viz-23823d1d60ec4ea08b21ab2ed53d5abb");
     }
 
     const paths = {

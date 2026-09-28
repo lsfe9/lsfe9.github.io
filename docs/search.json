@@ -108,29 +108,29 @@
     "objectID": "posts/python-penguins/index.html#dataset-intro",
     "href": "posts/python-penguins/index.html#dataset-intro",
     "title": "Penguins data analysis in Python",
-    "section": "dataset intro",
-    "text": "dataset intro\nThe data called penguins came from the package [Palmer Penguins] (https://allisonhorst.github.io/palmerpenguins/)."
+    "section": "Dataset intro",
+    "text": "Dataset intro\nThe data called penguins came from the package [Palmer Penguins] (https://allisonhorst.github.io/palmerpenguins/)."
   },
   {
     "objectID": "posts/python-penguins/index.html#count-the-number-of-penguins-for-each-species",
     "href": "posts/python-penguins/index.html#count-the-number-of-penguins-for-each-species",
     "title": "Penguins data analysis in Python",
-    "section": "count the number of penguins for each species",
-    "text": "count the number of penguins for each species\n\npenguins[\"species\"].value_counts()\n\nspecies\nAdelie       152\nGentoo       124\nChinstrap     68\nName: count, dtype: int64"
+    "section": "Count the number of penguins for each species",
+    "text": "Count the number of penguins for each species\n\npenguins[\"species\"].value_counts()\n\nspecies\nAdelie       152\nGentoo       124\nChinstrap     68\nName: count, dtype: int64"
   },
   {
     "objectID": "posts/python-penguins/index.html#find-the-specie-with-min-body_mass_g",
     "href": "posts/python-penguins/index.html#find-the-specie-with-min-body_mass_g",
     "title": "Penguins data analysis in Python",
-    "section": "find the specie with min body_mass_g",
-    "text": "find the specie with min body_mass_g\n\nprint(penguins.sort_values(\"body_mass_g\", ascending=True)[[\"species\", \"body_mass_g\"]].head(1))\n\n       species  body_mass_g\n314  Chinstrap       2700.0"
+    "section": "Find the specie with min body_mass_g",
+    "text": "Find the specie with min body_mass_g\n\nprint(penguins.sort_values(\"body_mass_g\", ascending=True)[[\"species\", \"body_mass_g\"]].head(1))\n\n       species  body_mass_g\n314  Chinstrap       2700.0"
   },
   {
     "objectID": "posts/python-penguins/index.html#the-plot-of-species-v.s.-body-mass",
     "href": "posts/python-penguins/index.html#the-plot-of-species-v.s.-body-mass",
     "title": "Penguins data analysis in Python",
-    "section": "the plot of species v.s. body mass",
-    "text": "the plot of species v.s. body mass\n\nimport altair as alt\n\nplot = (\n    alt.Chart(penguins.dropna(subset=[\"species\", \"body_mass_g\"]))\n    .mark_circle() \n    .encode(\n        x=alt.X(\"species:N\", title=\"species\"),\n        y=alt.Y(\"body_mass_g:Q\", title=\"body mass (g)\")\n    )\n    .properties(width=300, height=200))\n\nplot\n\n\n\n\n\n\n\n\n\nFigure 1: body mass of penguins by species"
+    "section": "The plot of species v.s. body mass",
+    "text": "The plot of species v.s. body mass\n\nimport altair as alt\n\nplot = (\n    alt.Chart(penguins.dropna(subset=[\"species\", \"body_mass_g\"]))\n    .mark_circle() \n    .encode(\n        x=alt.X(\"species:N\", title=\"species\"),\n        y=alt.Y(\"body_mass_g:Q\", title=\"body mass (g)\")\n    )\n    .properties(width=300, height=200))\n\nplot\n\n\n\n\n\n\n\n\n\nFigure 1: body mass of penguins by species"
   },
   {
     "objectID": "posts/python-penguins/index.html#summary-and-found",

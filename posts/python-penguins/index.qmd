@@ -4,7 +4,7 @@ author: "Jiaqi Feng"
 date: 2026-09-28
 ---
 
-## dataset
+## Dataset
 ```{python}
 #| message: false
 #| warning: false
@@ -15,21 +15,21 @@ penguins = load_penguins()
 print(penguins.head())
 ```
 
-## dataset intro
+## Dataset intro
 The data called penguins came from the package [Palmer Penguins] (https://allisonhorst.github.io/palmerpenguins/).
 
 
-## count the number of penguins for each species
+## Count the number of penguins for each species
 ```{python}
 penguins["species"].value_counts()
 ```
 
-## find the specie with min body_mass_g
+## Find the specie with min body_mass_g
 ```{python}
 print(penguins.sort_values("body_mass_g", ascending=True)[["species", "body_mass_g"]].head(1))
 ```
 
-## the plot of species v.s. body mass
+## The plot of species v.s. body mass
 ```{python}
 #| label: fig-penguin-mass
 #| fig-cap: "body mass of penguins by species"
