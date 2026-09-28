@@ -1,0 +1,6 @@
+---
+title: "Penguins data analysis in Python"
+author: "Jiaqi Feng"
+date: 2026-09-28
+---
+
