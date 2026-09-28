@@ -4,6 +4,46 @@ author: "Jiaqi Feng"
 date: 2026-09-28
 ---
 
+
+## useful package and dataset
 ```{r}
+#| message: false
+#| warning: false
+
 library(ggplot2)
+library(dplyr)
+library(palmerpenguins)
+head(penguins)
 ```
+
+## dataset intro
+The data called penguins came from the package [Palmer Penguins] (https://allisonhorst.github.io/palmerpenguins/).
+
+## count the number of penguins for each species
+```{r}
+table(penguins$species)
+```
+
+# find the specie with min body_mass_g
+```{r}
+min_body_penguin <- penguins |>
+    arrange(body_mass_g) |>
+    slice(1) |>
+    pull(species, body_mass_g)
+min_body_penguin
+```
+
+## the plot of species v.s. body mass
+```{r}
+#| label: fig-penguin-mass
+#| fig-cap: "body mass of penguins by species"
+
+plot <- penguins |>
+    ggplot(aes(x = species, y = body_mass_g)) +
+    labs( x = "Species", y = "Body mass (g)" )+
+    geom_jitter(width = 0.2, height = 0, size = 1)
+plot
+```
+
+## Summary and Found
+I read the dataset of penguins, and then I found that there were three species of penguins in this dataset. There are 152 Adelie 152, 124 Gentoo and 68 Chinstrap obervations in these data set. Among them, the penguin species with the smallest body_mass_g (2700.0g) is Chinstrap. Finally, I drew scatter plots for showing the body mass of each species of penguin.

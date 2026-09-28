@@ -4,7 +4,6 @@ author: "Jiaqi Feng"
 date: 2026-09-28
 ---
 
-
 ## dataset
 ```{python}
 #| message: false
@@ -26,7 +25,6 @@ penguins["species"].value_counts()
 ```
 
 ## find the specie with min body_mass_g
-
 ```{python}
 print(penguins.sort_values("body_mass_g", ascending=True)[["species", "body_mass_g"]].head(1))
 ```
@@ -49,3 +47,6 @@ plot = (
 
 plot
 ```
+
+## Summary and Found
+I read the dataset of penguins, and then I found that there were three species of penguins in this dataset. There are 152 Adelie 152, 124 Gentoo and 68 Chinstrap obervations in these data set. Among them, the penguin species with the smallest body_mass_g (2700.0g) is Chinstrap. Finally, I drew scatter plots for showing the body mass of each species of penguin.
