@@ -18,9 +18,10 @@ You could run the following commands in your Git Bash terminal to built site.
 4. uv sync  
 5. R   
 6. renv::restore()  
-7. q()  
-8. n  
-9. uv run quarto render  
+7. Y
+8. q()  
+9. n  
+10. uv run quarto render  
 
 # Open the site locally
 The rendered website is in the `docs` folder. Open `docs/index.html` in a web browser, then you can see the website. These posts are under `docs/posts`.
